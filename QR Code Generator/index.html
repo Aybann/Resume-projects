@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="qr_section">
+    <div class="qr_container">
+      <img id="qr_code_image" src="http://api.qrserver.com/v1/create-qr-code/?data=Ivan&bgcolor=255-255-255&color=1F3251" alt="" srcset="">
+      <div class="qr_code_description">
+        <h2>Add text and the web application will generate a QR code for it</h2>
+        <p>Scan the QR code in order to visit or read the text</p>
+      </div>
+        <div class="qr_inputs">
+          <input id="inputText" type="text">
+          <a id="downloadBtn" href="http://api.qrserver.com/v1/create-qr-code/?data=Ivan&bgcolor=255-255-255&color=1F3251&size=300x300" Download >Download</a>
+        </div>
+    </div>
+  </div>
+</body>
+</html>
