@@ -1,0 +1,136 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.background{
+  margin: 5% 0;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+main{
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  font-size: 18px;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+  z-index: 1;
+}
+header a{
+  text-decoration: none;
+  color: black;
+  margin: 3em 1em;
+  font-weight: bold;
+}
+header button{
+  width: 100px;
+  border: 1px solid black;
+  background-color: transparent;
+  outline: none;
+  padding: 12px 0 ;
+  margin: 0 .2em;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: .8em;
+  border-radius: 4px;
+}
+header button img{
+  width: 12px;
+}
+.display{
+  font-weight: bolder;
+  font-size: clamp(1.5em, 4vw, 3em);
+  text-align: center;
+  margin: 3em 0 1em;
+}
+.hide{
+  display: none;
+}
+.winningAxis{
+  background-color: #07da35;
+}
+#container{
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-rows: 3(33%);
+  width: 400px;
+  height: 400px;
+}
+.tile{
+  border: 1px solid black;
+  min-width: 100px;
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+  cursor: pointer;
+}
+.playerX{
+  color: red;
+}
+.playerO{
+  color: #498AFB;
+}
+.controls{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1em;
+}
+.winner{
+  font-size: clamp(1.5em, 4vw, 3em);
+  text-align: center;
+  margin: 1em 0 0 0;
+  font-weight: bolder;
+}
+
+footer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  background-color: rgb(240, 240, 240);
+  color: black;
+  margin-top: 100px;
+}
+.social, .bottomNav{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-bottom: 10px;
+}
+.social li, .bottomNav li{
+  margin: 0 10px;
+}
+.social li a, .bottomNav li a{
+text-decoration: none;
+color: black;
+}
+
+.dark-mode{
+  filter: invert(1) hue-rotate(180deg);
+}
+.invert{
+  filter: invert(1) hue-rotate(180deg);
+}

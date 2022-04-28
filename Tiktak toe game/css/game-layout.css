@@ -1,0 +1,20 @@
+@media (max-width: 786px){
+  header{  
+    text-align: center;
+  }
+  header button{
+    border: none;
+    font-size: 0;
+  }
+  header button img{
+    width: 20px; 
+  }
+  .buttons{
+    width: 100px;
+    display: flex;
+  }
+  #container{
+    width: 300px;
+    height: 300px;
+  }
+}
